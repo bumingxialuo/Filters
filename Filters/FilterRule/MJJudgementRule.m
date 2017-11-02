@@ -61,7 +61,6 @@ static MJJudgementRule *sharedInstance;
 
 - (BOOL)isUnwantedMessageForSystemQueryRequest:(ILMessageFilterQueryRequest *)systemRequest {
     MJQueryRequest *request = [[MJQueryRequest alloc] initWithSystemQueryRequest:systemRequest];
-    
     // White list has higher priority
     if (self.conditionList) {
         for (MJCondition *condition in self.conditionList) {

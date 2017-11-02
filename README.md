@@ -5,7 +5,10 @@ filters和messageExtension读取同一份数据(规则)的方式：AppGroup数�
 ## 2、在Filters中的Capabilities中添加Domians
 group.com.yourname.filters <br>
 <br>
+![]/Users/xia/Desktop/Filters/images/图片剪辑.pictClipping
 ## 3、在当前工程新建一个MessageFilterExtesion的target。
+![]/Users/xia/Desktop/Filters/images/图片剪辑 2.pictClipping
+![]/Users/xia/Desktop/Filters/images/图片剪辑 3.pictClipping
 ## 4、通过cocoapods导入YYModel（处理字符串的序列化和反序列化）
 Podfile文件如下：<br>
 ```shell
@@ -19,8 +22,12 @@ end
 ```
 ## 5、搭建页面
 ### 5.1 所有规则展示页面（提供删除功能）
+![]/Users/xia/Desktop/Filters/images/图片剪辑 5.pictClipping
+![]/Users/xia/Desktop/Filters/images/图片剪辑 6.pictClipping
 ### 5.2 新建规则页面  —规则的标题输入+具体规则
+![]/Users/xia/Desktop/Filters/images/图片剪辑 7.pictClipping
 ### 5.3具体规则 —关键字 过滤对象 过滤方式
+![]/Users/xia/Desktop/Filters/images/图片剪辑 8.pictClipping
 ## 6、规则的结构在 MJCondition 文件中 包含
 标题：alias<br>
 过滤对象：ConditionTarget<br>
