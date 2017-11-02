@@ -5,8 +5,9 @@ filters和messageExtension读取同一份数据(规则)的方式：AppGroup数�
 ## 2、在Filters中的Capabilities中添加Domians
 group.com.yourname.filters <br>
 <br>
-![image](https://github.com/bumingxialuo/Filters/blob/master/images/1.png)
+![image](https://github.com/bumingxialuo/Filters/blob/master/images/7.png)
 ## 3、在当前工程新建一个MessageFilterExtesion的target。
+![image](https://github.com/bumingxialuo/Filters/blob/master/images/1.png)
 ![image](https://github.com/bumingxialuo/Filters/blob/master/images/2.png)
 ## 4、通过cocoapods导入YYModel（处理字符串的序列化和反序列化）
 Podfile文件如下：<br>
