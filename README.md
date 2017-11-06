@@ -2,10 +2,10 @@
 在filters里新建一个规则，messageExtension读取这个规则，信息app收到短信后，将短信的sender和内容发送给filter的messageExtension进行检测。messageExtension给出短信的处理方式：允许、过滤、不处理。<br>
 filters和messageExtension读取同一份数据(规则)的方式：AppGroup数据共享 		filters里面新建一个规则，存到NSUserDefault里面。messageExtension读取这个规则。<br>
 ## 1、创建一个工程：Filters
-## 2、在Filters中的Capabilities中添加Domians
+## 2、在Filters和MessageExtension中的Capabilities中添加App Groups
 group.com.yourname.filters <br>
 <br>
-![image](https://github.com/bumingxialuo/Filters/blob/master/images/7.png)
+![image](https://github.com/bumingxialuo/Filters/blob/master/images/07.png)
 ## 3、在当前工程新建一个MessageFilterExtesion的target。
 ![image](https://github.com/bumingxialuo/Filters/blob/master/images/1.png)
 ![image](https://github.com/bumingxialuo/Filters/blob/master/images/2.png)
