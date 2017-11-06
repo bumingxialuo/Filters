@@ -73,6 +73,7 @@
 /* Begin PBXFileReference section */
 		161B0C5E1FA80E4200E014CD /* FilterTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterTableViewController.h; sourceTree = "<group>"; };
 		161B0C5F1FA80E4200E014CD /* FilterTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterTableViewController.m; sourceTree = "<group>"; };
+		162140BE1FAFFA7A00A6E632 /* MessageExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MessageExtension.entitlements; sourceTree = "<group>"; };
 		16CC1AEA1FA8146E0074E87C /* NewFilterStaticTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewFilterStaticTableViewController.h; sourceTree = "<group>"; };
 		16CC1AEB1FA8146E0074E87C /* NewFilterStaticTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewFilterStaticTableViewController.m; sourceTree = "<group>"; };
 		16CC1AED1FA8149B0074E87C /* MatchingTypeTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatchingTypeTableViewController.h; sourceTree = "<group>"; };
@@ -242,6 +243,7 @@
 		16F248EC1FA6FBCF00D0CC06 /* MessageExtension */ = {
 			isa = PBXGroup;
 			children = (
+				162140BE1FAFFA7A00A6E632 /* MessageExtension.entitlements */,
 				16F248ED1FA6FBCF00D0CC06 /* MessageFilterExtension.h */,
 				16F248EE1FA6FBCF00D0CC06 /* MessageFilterExtension.m */,
 				16F248F01FA6FBCF00D0CC06 /* Info.plist */,
@@ -368,8 +370,11 @@
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
-							com.apple.SafariKeychain = {
+							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 0;
 							};
 						};
 					};
@@ -386,6 +391,11 @@
 					16F248EA1FA6FBCF00D0CC06 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -806,7 +816,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HJFP99G4PR;
+				DEVELOPMENT_TEAM = VZ2673TTD2;
 				INFOPLIST_FILE = FiltersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.erongdu.FiltersTests;
@@ -822,7 +832,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HJFP99G4PR;
+				DEVELOPMENT_TEAM = VZ2673TTD2;
 				INFOPLIST_FILE = FiltersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.erongdu.FiltersTests;
@@ -836,7 +846,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HJFP99G4PR;
+				DEVELOPMENT_TEAM = VZ2673TTD2;
 				INFOPLIST_FILE = FiltersUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.erongdu.FiltersUITests;
@@ -850,7 +860,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HJFP99G4PR;
+				DEVELOPMENT_TEAM = VZ2673TTD2;
 				INFOPLIST_FILE = FiltersUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.erongdu.FiltersUITests;
@@ -864,6 +874,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 46FE278628425EF0CBB1BCA0 /* Pods-MessageExtension.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MessageExtension/MessageExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VZ2673TTD2;
 				INFOPLIST_FILE = MessageExtension/Info.plist;
@@ -879,6 +890,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DC4FB6C4FD19D83BEADC619C /* Pods-MessageExtension.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MessageExtension/MessageExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VZ2673TTD2;
 				INFOPLIST_FILE = MessageExtension/Info.plist;

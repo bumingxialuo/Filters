@@ -9,29 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MessageExtension/MessageFilterExtension.m"
-            timestampString = "531216464.325799"
+            filePath = "Filters/FilterRule/MJCondition.m"
+            timestampString = "531648579.028834"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "-offlineActionForQueryRequest:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MessageExtension/MessageFilterExtension.m"
-            timestampString = "531216464.325891"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "-offlineActionForQueryRequest:"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "-isMatchedForRequest:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

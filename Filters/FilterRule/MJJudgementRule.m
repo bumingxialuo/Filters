@@ -65,7 +65,7 @@ static MJJudgementRule *sharedInstance;
     if (self.conditionList) {
         for (MJCondition *condition in self.conditionList) {
             if ([condition isMatchedForRequest:request]) {
-                return NO;
+                return YES;
             }
         }
     }

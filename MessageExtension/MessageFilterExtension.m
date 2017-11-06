@@ -26,8 +26,7 @@
         case ILMessageFilterActionFilter: {
             // Based on offline data, we know this message should either be Allowed or Filtered. Send response immediately.
             ILMessageFilterQueryResponse *response = [[ILMessageFilterQueryResponse alloc] init];
-            response.action = offlineAction;
-            
+            response.action = ILMessageFilterActionFilter;
             completion(response);
             break;
         }
@@ -68,6 +67,7 @@
         return ILMessageFilterActionFilter;
     }
     return ILMessageFilterActionAllow;
+    
 }
 
 - (ILMessageFilterAction)actionForNetworkResponse:(ILNetworkResponse *)networkResponse {
